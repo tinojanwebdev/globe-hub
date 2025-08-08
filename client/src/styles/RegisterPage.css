@@ -1,0 +1,197 @@
+   /* Split wrapper */
+   .register-wrapper {
+    display: flex;
+    height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  /* Left panel */
+  .register-left {
+    flex: 1;
+    background: #2BB7B2;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .register-left .logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .register-left h2 {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+  
+  .register-left p {
+    max-width: 260px;
+    margin-bottom: 2rem;
+  }
+  
+  .sign-in-btn {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 0.6rem 2rem;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .sign-in-btn:hover {
+    background: white;
+    color: #2BB7B2;
+  }
+  
+  /* Right panel */
+  .register-right {
+    flex: 1;
+    background: #ffffff;
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .register-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2BB7B2;
+    margin-bottom: 1rem;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .social-btn {
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #f1f1f1;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+  
+  .or-text {
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+    color: #1f1e1e;
+  }
+  
+  .register-form {
+    width: 100%;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .input {
+    padding: 0.75rem 1rem;
+    border: 1px solid #9c9a9a;
+    border-radius: 30px;
+    font-size: 0.95rem;
+    outline: none;
+    color: rgb(89, 40, 40);                /* Text color */
+    background-color: #2BB7B2;  /* Matching input background to left panel teal */
+  }
+  
+  .input:focus {
+    border-color: #249d99;
+    background-color: #238a8a;  /* Slightly darker teal on focus */
+  }
+  
+  
+  .sign-up-btn {
+    background: #2BB7B2;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  .sign-up-btn:hover {
+    background: #249d99;
+  }
+  
+  .error {
+    color: #d93025;
+    text-align: center;
+    font-size: 0.85rem;
+  }
+  
+  /* Success Modal */
+  .success-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  
+  .success-box {
+    background: white;
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .success-text {
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  
+  .loader {
+    width: 24px;
+    height: 24px;
+    border: 3px solid rgba(0,0,0,0.1);
+    border-top-color: #2BB7B2;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  .logo{
+  font-size: 5rem;
+  }
+  .cancel-btn {
+    background: transparent;
+    color: #2BB7B2;
+    border: 2px solid #2BB7B2;
+    padding: 0.7rem;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: 0.3s ease;
+  }
+  
+  .cancel-btn:hover {
+    background: #2BB7B2;
+    color: white;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }  
