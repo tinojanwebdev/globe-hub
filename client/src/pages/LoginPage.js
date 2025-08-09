@@ -62,7 +62,7 @@ export default function LoginPage() {
               <input
                 className="login-input"
                 type="email"
-                value={email}
+                value={email} 
                 onChange={e => setEmail(e.target.value)}
               />
 
