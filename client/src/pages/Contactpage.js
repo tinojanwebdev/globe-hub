@@ -20,7 +20,7 @@ export default function ContactPage() {
     }
 
     try {
-      await axios.post('http://localhost:5000/api/contact', {
+      await axios.post('http://13.235.127.43:5000/api/contact', {
         name,
         email,
         message

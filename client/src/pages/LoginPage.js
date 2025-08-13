@@ -13,7 +13,7 @@ export default function LoginPage() {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/api/login', { email, password });
+      const res = await axios.post('http://13.235.127.43:5000/api/login', { email, password });
       localStorage.setItem('user', JSON.stringify(res.data.user));
       navigate('/places');
     } catch (err) {
